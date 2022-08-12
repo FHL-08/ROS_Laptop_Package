@@ -1,0 +1,2 @@
+laptop_state
+-DCATKIN_DEVEL_PREFIX=/home/faisal/task_ws/devel -DCMAKE_INSTALL_PREFIX=/home/faisal/task_ws/install -G Unix Makefiles

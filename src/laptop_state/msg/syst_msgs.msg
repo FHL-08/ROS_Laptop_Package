@@ -1,0 +1,15 @@
+Header header
+string device_name
+float32[] partitions
+float32[] system_size
+uint32 cpu_processor
+float32[] free_space
+float64 ram_size
+float64 used_ram
+float64 available_ram
+float32[] frequency
+float64 cpu_temp
+float32[] core_temp
+string cpu_model_name
+string user_name
+string linux_version
