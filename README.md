@@ -7,6 +7,11 @@ A ROS package that publishes information about the host laptop to a Topic
 
 ## Services (.srv)
 
+## Topics
+* The name of the topic for the battery is `/battery_chatter`
+* The name of the topic for the laptop is `/system_chatter`
+* to view the message published by each topic, run a `rostopic echo <topic name>`
+
 ## Installing the package
 * Make a local git pull request and download the folder
 * change directory to the folder 
@@ -14,11 +19,11 @@ A ROS package that publishes information about the host laptop to a Topic
 * source the folder using `source ./devel/setup.bash`
 
 ## Getting the battery information
-* To get the battery information, run the battery_publisher.py node
-* Subscribe to the publisher by running the battery_subscriber.py node
+* To get the battery information, run the `battery_publisher.py` node
+* Subscribe to the publisher by running the `battery_subscriber.py` node
 * Note: Make sure roscore is running
 
 ## Getting Laptop information
-* To get the information about the laptop, run the system_publisher.py node
-* Subscribe to the publisher by running the system_subscriber.py node
+* To get the information about the laptop, run the `system_publisher.py` node
+* Subscribe to the publisher by running the `system_subscriber.py` node
 * Note: Make sure roscore is running
