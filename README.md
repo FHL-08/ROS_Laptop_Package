@@ -13,9 +13,9 @@ A ROS package that publishes information about the host laptop to a Topic
 * to view the message published by each topic, run a `rostopic echo <topic name>`
 
 ## Installing the package
+* Create a catkin workspace in a preferred location
 * Make a local git pull request and download the folder
-* change directory to the folder
-* Navigate to "ROS_Laptop_package/build" and then delete `CMakeCache.txt` and `catkin_make.cache`
+* change directory to the recently downloaded folder
 * build the project using a `catkin_make`
 * source the folder using `source ./devel/setup.bash`
 
