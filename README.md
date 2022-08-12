@@ -1,4 +1,4 @@
-# ROS_Laptop_Package
+# ROS_Laptop_package
 A ROS package that publishes information about the host laptop to a Topic
 
 ## Messages (.msg)
