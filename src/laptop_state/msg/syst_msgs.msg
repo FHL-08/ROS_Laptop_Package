@@ -1,6 +1,6 @@
 Header header
 string device_name
-float32[] partitions
+string[] partitions
 float32[] system_size
 uint32 cpu_processor
 float32[] free_space
