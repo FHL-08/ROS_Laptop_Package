@@ -13,15 +13,15 @@ def callback(data):
     part = ', '.join(data.partitions)
     rospy.loginfo("System Partitions: [%s]"%part)
     size = str(data.system_size)[1: -1]
-    rospy.loginfo("Total size of each partition in MB: [%s]"%size)
+    rospy.loginfo("Total size of each partition in GB: [%s]"%size)
     rospy.loginfo("No of Logical Processors: %s"%data.cpu_processor)
     freq = str(data.frequency)[1: -1]
-    rospy.loginfo("Frequency for each logical CPU in GHz: [%s]"%freq)
+    rospy.loginfo("Frequency for each logical CPU in MHz: [%s]"%freq)
     free = str(data.free_space)[1: -1]
-    rospy.loginfo("Free Space on each partition in MB: [%s]"%free)
-    rospy.loginfo("RAM Size: %s"%data.ram_size)
-    rospy.loginfo("Used RAM Space: %s"%data.used_ram)
-    rospy.loginfo("Available RAM Space: %s"%data.available_ram)
+    rospy.loginfo("Free Space on each partition in GB: [%s]"%free)
+    rospy.loginfo("RAM Size: %s MB"%data.ram_size)
+    rospy.loginfo("Used RAM Space: %s MB"%data.used_ram)
+    rospy.loginfo("Available RAM Space: %s MB"%data.available_ram)
     rospy.loginfo("CPU Temperature: %s°C"%data.cpu_temp)
     cputemp = str(data.core_temp)[1: -1]
     rospy.loginfo("Temperatures for each CPU core in °C: [%s]"%cputemp)
