@@ -6,6 +6,7 @@ A ROS package that publishes information about the host laptop to a Topic
 * [laptop_battery](https://github.com/FHL-08/ROS_Laptop_Package/blob/main/src/laptop_state/msg/laptop_battery.msg): Describes the power state of the battery
 
 ## Services (.srv)
+* None Currently
 
 ## Topics
 * The name of the topic for the battery is `/battery_chatter`
