@@ -11,7 +11,7 @@ from statux.disks import *
 from statux.ram import *
 from statux.system import *
 from statux.temp import *
-from battery_state.msg import syst_msgs
+from laptop_state.msg import syst_msgs
 
 def talker():
     pub = rospy.Publisher('system_chatter', syst_msgs, queue_size=10)
@@ -19,9 +19,9 @@ def talker():
     rate = rospy.Rate(5)
     system = syst_msgs()
     partition = partitions()
-    disk_size = []
-    freeSpace = []
     while not rospy.is_shutdown():
+        disk_size = []
+        freeSpace = []
         pub_str = "Publishing System Message %s"%rospy.get_time()
         for i in partition:
             disk_size.append(total_size(i))
