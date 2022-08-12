@@ -1,12 +1,15 @@
 #!usr/bin/env python
 
 import rospy
-from battery_state.msg import syst_msgs
+from laptop_state.msg import syst_msgs
 
 def callback(data):
     print("="*5)
     rospy.loginfo(rospy.get_caller_id())
     rospy.loginfo("Device Neme: %s"%data.device_name)
+    rospy.loginfo("Linux Version: %s"%data.linux_version)
+    rospy.loginfo("CPU Model Name: %s"%data.cpu_model_name)
+    rospy.loginfo("User Name: %s"%data.user_name)
     part = ', '.join(data.partitions)
     rospy.loginfo("System Partitions: [%s]"%part)
     size = str(data.system_size)[1: -1]
@@ -21,10 +24,10 @@ def callback(data):
     rospy.loginfo("Available RAM Space: %s"%data.available_ram)
     rospy.loginfo("CPU Temperature: %s°C"%data.cpu_temp)
     cputemp = str(data.core_temp)[1: -1]
-    rospy.loginfo("Temperatures for each CPU core in °C:: [%s]"%cputemp)
-    rospy.loginfo("CPU Model Name: %s"%data.cpu_model_name)
-    rospy.loginfo("User Name: %s"%data.user_name)
-    rospy.loginfo("Linux Version: %s"%data.linux_version)
+    rospy.loginfo("Temperatures for each CPU core in °C: [%s]"%cputemp)
+    
+    
+    
 
 def listener():
     rospy.init_node('system_subscriber', anonymous=True)
