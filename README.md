@@ -1,4 +1,4 @@
-# task_ws
+# ROS_Laptop_Package
 A ROS package that publishes information about the host laptop to a Topic
 
 ## Messages (.msg)
